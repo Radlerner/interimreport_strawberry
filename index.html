@@ -1,0 +1,1156 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트팜 데이터 분석 리포트 - 김선비 농가</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>스마트팜 분석 리포트</span>
+                </div>
+                <nav class="nav">
+                    <a href="#dashboard" class="nav-link active">대시보드</a>
+                    <a href="#analysis" class="nav-link">기간별 분석</a>
+                    <a href="#roi" class="nav-link">ROI 분석</a>
+                    <a href="#risk" class="nav-link">리스크 관리</a>
+                    <a href="#optimization" class="nav-link">수익 최적화</a>
+                    <a href="#checklist" class="nav-link">관리 체크리스트</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">방울토마토 스마트팜 종합 분석</h1>
+            <p class="hero-subtitle">김선비 농가 | 보니또_미푸코 품종 | 재배면적 495m²</p>
+            <p class="hero-date">분석 기준일: 2025년 10월 28일</p>
+        </div>
+    </section>
+
+    <!-- Main Dashboard -->
+    <section id="dashboard" class="section dashboard">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chart-line"></i>
+                Executive Summary
+            </h2>
+            
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="kpi-card excellent">
+                    <div class="kpi-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">ROI (투자수익률)</h3>
+                        <p class="kpi-value">22.80%</p>
+                        <span class="kpi-badge">Excellent</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card excellent">
+                    <div class="kpi-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">투자 회수 기간</h3>
+                        <p class="kpi-value">4.39<span class="unit">년</span></p>
+                        <span class="kpi-badge">Excellent</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card good">
+                    <div class="kpi-icon">
+                        <i class="fas fa-won-sign"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">연간 순이익</h3>
+                        <p class="kpi-value">74M<span class="unit">원</span></p>
+                        <span class="kpi-badge">Good</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card info">
+                    <div class="kpi-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3 class="kpi-label">재배 현황</h3>
+                        <p class="kpi-value">196<span class="unit">일차</span></p>
+                        <span class="kpi-badge">수확기</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Image -->
+            <div class="image-container">
+                <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/e2d0977a-3c1f-42dc-b2ad-dca904ff156f/edd12543-e169-452b-84d3-495b1873a1e2?se=2025-10-28T11%3A25%3A05Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22smartfarm_dashboard.png%22&sig=TDijU8lhFd%2B%2BG3/dlITXSaVctb3Nz9FDHZ9js%2B9FZZE%3D" alt="스마트팜 대시보드" class="dashboard-image">
+                <p class="image-caption">ROI 및 리스크 관리 종합 대시보드</p>
+            </div>
+
+            <!-- Farm Info -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4><i class="fas fa-map-marked-alt"></i> 재배 정보</h4>
+                    <ul>
+                        <li><strong>재배면적:</strong> 495 m²</li>
+                        <li><strong>작목:</strong> 방울토마토</li>
+                        <li><strong>품종:</strong> 보니또_미푸코</li>
+                        <li><strong>정식일:</strong> 2025년 4월 15일 (추정)</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h4><i class="fas fa-chart-bar"></i> 생산 예측</h4>
+                    <ul>
+                        <li><strong>예상 수확량:</strong> 14,850 kg/년</li>
+                        <li><strong>단위 생산량:</strong> 30 kg/m²</li>
+                        <li><strong>예상 매출:</strong> 74,250,000원/년</li>
+                        <li><strong>이익률:</strong> 99.7%</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h4><i class="fas fa-calculator"></i> 투자 내역</h4>
+                    <ul>
+                        <li><strong>초기 투자비:</strong> 324,662,230원</li>
+                        <li><strong>연간 운영비:</strong> 220,470원</li>
+                        <li><strong>일평균 운영비:</strong> 604원/일</li>
+                        <li><strong>시설 수명:</strong> 20년+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Period Analysis -->
+    <section id="analysis" class="section analysis-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-alt"></i>
+                기간별 분석 (일간/주간/월간)
+            </h2>
+
+            <!-- Monthly Trend -->
+            <div class="trend-container">
+                <h3 class="subsection-title">월별 비용 및 에너지 소비 추이</h3>
+                
+                <div class="trend-grid">
+                    <div class="trend-card">
+                        <div class="trend-month">8월</div>
+                        <div class="trend-data">
+                            <p><strong>비용:</strong> 7,667원 (6일)</p>
+                            <p><strong>에너지:</strong> 36.2 kWh</p>
+                            <p><strong>방재비:</strong> 7,650원</p>
+                        </div>
+                    </div>
+
+                    <div class="trend-card">
+                        <div class="trend-month">9월</div>
+                        <div class="trend-data">
+                            <p><strong>비용:</strong> 3,205원 (11일)</p>
+                            <p><strong>에너지:</strong> 145.0 kWh</p>
+                            <p><strong>방재비:</strong> 3,200원</p>
+                        </div>
+                    </div>
+
+                    <div class="trend-card">
+                        <div class="trend-month">10월</div>
+                        <div class="trend-data">
+                            <p><strong>비용:</strong> 0원 (1일)</p>
+                            <p><strong>에너지:</strong> 0 kWh</p>
+                            <p><strong>방재비:</strong> 0원</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="average-info">
+                    <i class="fas fa-info-circle"></i>
+                    <span><strong>일평균 운영비:</strong> 604원/일 (18일 기준)</span>
+                </div>
+            </div>
+
+            <!-- Growth Stage Analysis -->
+            <div class="growth-stage-container">
+                <h3 class="subsection-title">생육 주기별 비용-수익 분석</h3>
+                
+                <div class="stage-grid">
+                    <div class="stage-card completed">
+                        <div class="stage-header">
+                            <span class="stage-number">1</span>
+                            <h4>초기생육기</h4>
+                            <span class="stage-status">완료</span>
+                        </div>
+                        <div class="stage-content">
+                            <p class="stage-period">0-30일</p>
+                            <div class="stage-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">일평균 비용</span>
+                                    <span class="metric-value cost">50,000원</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">일평균 수익</span>
+                                    <span class="metric-value revenue">0원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stage-card completed">
+                        <div class="stage-header">
+                            <span class="stage-number">2</span>
+                            <h4>영양생장기</h4>
+                            <span class="stage-status">완료</span>
+                        </div>
+                        <div class="stage-content">
+                            <p class="stage-period">31-60일</p>
+                            <div class="stage-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">일평균 비용</span>
+                                    <span class="metric-value cost">80,000원</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">일평균 수익</span>
+                                    <span class="metric-value revenue">0원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stage-card completed">
+                        <div class="stage-header">
+                            <span class="stage-number">3</span>
+                            <h4>개화착과기</h4>
+                            <span class="stage-status">완료</span>
+                        </div>
+                        <div class="stage-content">
+                            <p class="stage-period">61-90일</p>
+                            <div class="stage-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">일평균 비용</span>
+                                    <span class="metric-value cost">120,000원</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">일평균 수익</span>
+                                    <span class="metric-value revenue">20,000원</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stage-card active">
+                        <div class="stage-header">
+                            <span class="stage-number">4</span>
+                            <h4>수확기</h4>
+                            <span class="stage-status current">현재</span>
+                        </div>
+                        <div class="stage-content">
+                            <p class="stage-period">91일+ (196일차)</p>
+                            <div class="stage-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">일평균 비용</span>
+                                    <span class="metric-value cost">150,000원</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">일평균 수익</span>
+                                    <span class="metric-value revenue">180,000원</span>
+                                </div>
+                            </div>
+                            <div class="stage-profit">
+                                <i class="fas fa-arrow-up"></i>
+                                일평균 순이익: 30,000원
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Image -->
+            <div class="image-container">
+                <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/e2d0977a-3c1f-42dc-b2ad-dca904ff156f/1ca93c6a-70fa-4c5a-8250-bfb209b40df8?se=2025-10-28T11%3A25%3A05Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22detailed_analysis.png%22&sig=Cpq2ZkD5tThf7sCMoL97aHiKBJ7JbtsdLuzl%2B8xIHtI%3D" alt="상세 분석 차트" class="dashboard-image">
+                <p class="image-caption">생육 단계별 상세 분석 차트</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Analysis -->
+    <section id="roi" class="section roi-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-chart-pie"></i>
+                ROI 및 투자 분석
+            </h2>
+
+            <div class="roi-summary">
+                <div class="roi-highlight">
+                    <h3>ROI 22.80% = Excellent 등급</h3>
+                    <p>농업 평균을 크게 상회하는 탁월한 투자 수익률</p>
+                </div>
+            </div>
+
+            <!-- Benchmark Comparison -->
+            <div class="benchmark-grid">
+                <div class="benchmark-card">
+                    <h4>은행 예금 (3.5%)</h4>
+                    <div class="comparison">
+                        <span class="multiplier">6.5배</span>
+                        <span class="comparison-label">높음</span>
+                    </div>
+                </div>
+
+                <div class="benchmark-card">
+                    <h4>일반 농업 (10%)</h4>
+                    <div class="comparison">
+                        <span class="multiplier">2.3배</span>
+                        <span class="comparison-label">높음</span>
+                    </div>
+                </div>
+
+                <div class="benchmark-card">
+                    <h4>일반 스마트팜 (15%)</h4>
+                    <div class="comparison">
+                        <span class="multiplier">1.5배</span>
+                        <span class="comparison-label">높음</span>
+                    </div>
+                </div>
+
+                <div class="benchmark-card highlight">
+                    <h4>김선비 농가</h4>
+                    <div class="comparison">
+                        <span class="multiplier">22.8%</span>
+                        <span class="comparison-label">기준</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Recovery -->
+            <div class="recovery-info">
+                <h3 class="subsection-title">투자 회수 분석</h3>
+                <div class="recovery-grid">
+                    <div class="recovery-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>회수 기간</h4>
+                        <p class="value">4.39년</p>
+                        <p class="detail">시설 수명(20년)의 21.9%</p>
+                    </div>
+                    <div class="recovery-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>이후 수익 기간</h4>
+                        <p class="value">15.6년</p>
+                        <p class="detail">순수익 창출 기간</p>
+                    </div>
+                    <div class="recovery-item">
+                        <i class="fas fa-percentage"></i>
+                        <h4>총 수익/투자</h4>
+                        <p class="value">4.6배</p>
+                        <p class="detail">생애주기 총 수익률</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROI Benchmark Image -->
+            <div class="image-container">
+                <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/e2d0977a-3c1f-42dc-b2ad-dca904ff156f/3495299f-f8c3-4100-8c73-5dda9e631ab7?se=2025-10-28T11%3A25%3A05Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22roi_benchmark.png%22&sig=i%2BqeotRXJg/vIUYpsrksI5eOcQoxD3Az7%2BUo6JJyIsw%3D" alt="ROI 벤치마크 비교" class="dashboard-image">
+                <p class="image-caption">ROI 비교 벤치마크 및 투자 회수 분석</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Management -->
+    <section id="risk" class="section risk-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-shield-alt"></i>
+                리스크 관리 분석 (ISO 31000 기반)
+            </h2>
+
+            <div class="risk-info">
+                <p class="risk-formula">
+                    <strong>리스크 점수 계산:</strong> 발생 가능성 (1-5) × 영향도 (1-5)
+                </p>
+            </div>
+
+            <!-- Risk Matrix -->
+            <div class="risk-matrix">
+                <div class="risk-card high">
+                    <div class="risk-header">
+                        <div class="risk-level">
+                            <span class="level-icon">🔴</span>
+                            <span class="level-text">HIGH</span>
+                        </div>
+                        <h3>환경 리스크</h3>
+                        <span class="risk-score">12점</span>
+                    </div>
+                    <div class="risk-body">
+                        <p class="risk-calc">가능성 3 × 영향도 4</p>
+                        <ul class="risk-details">
+                            <li>온도 범위: 0-27.5°C (평균 21.2°C)</li>
+                            <li>계절별 극한 온도 발생 가능</li>
+                            <li>피해 시 2,000-5,000만원 손실</li>
+                        </ul>
+                        <div class="risk-actions">
+                            <h4>대응 전략:</h4>
+                            <ul>
+                                <li>✓ 실시간 센서 모니터링</li>
+                                <li>✓ 자동 환경제어 시스템</li>
+                                <li>✓ 백업 전원/난방 설비</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-card medium">
+                    <div class="risk-header">
+                        <div class="risk-level">
+                            <span class="level-icon">🟡</span>
+                            <span class="level-text">MEDIUM</span>
+                        </div>
+                        <h3>생산 리스크</h3>
+                        <span class="risk-score">9점</span>
+                    </div>
+                    <div class="risk-body">
+                        <p class="risk-calc">가능성 3 × 영향도 3</p>
+                        <ul class="risk-details">
+                            <li>작업시간: 29.57시간/일 (평균 대비 48% ↑)</li>
+                            <li>과로로 인한 관리 소홀 가능성</li>
+                            <li>품질 저하 → 판매단가 하락</li>
+                        </ul>
+                        <div class="risk-actions">
+                            <h4>대응 전략:</h4>
+                            <ul>
+                                <li>✓ 작업 프로세스 효율화</li>
+                                <li>✓ 자동화 설비 도입 검토</li>
+                                <li>✓ 인력 충원 또는 외주화</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-card medium">
+                    <div class="risk-header">
+                        <div class="risk-level">
+                            <span class="level-icon">🟡</span>
+                            <span class="level-text">MEDIUM</span>
+                        </div>
+                        <h3>병해충 리스크</h3>
+                        <span class="risk-score">6점</span>
+                    </div>
+                    <div class="risk-body">
+                        <p class="risk-calc">가능성 2 × 영향도 3</p>
+                        <ul class="risk-details">
+                            <li>현재까지 3건 발생 (낮은 빈도)</li>
+                            <li>환경제어로 억제 효과 확인</li>
+                            <li>발생 시 확산 위험 존재</li>
+                        </ul>
+                        <div class="risk-actions">
+                            <h4>대응 전략:</h4>
+                            <ul>
+                                <li>✓ 월 1회 예방적 방제</li>
+                                <li>✓ 일일 육안 관찰 루틴</li>
+                                <li>✓ 조기 발견 시 즉시 대응</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-card medium">
+                    <div class="risk-header">
+                        <div class="risk-level">
+                            <span class="level-icon">🟡</span>
+                            <span class="level-text">MEDIUM</span>
+                        </div>
+                        <h3>에너지 리스크</h3>
+                        <span class="risk-score">6점</span>
+                    </div>
+                    <div class="risk-body">
+                        <p class="risk-calc">가능성 3 × 영향도 2</p>
+                        <ul class="risk-details">
+                            <li>월 평균 90.6 kWh 소비</li>
+                            <li>전기/가스 요금 변동성</li>
+                            <li>동절기 난방비 급증 가능</li>
+                        </ul>
+                        <div class="risk-actions">
+                            <h4>대응 전략:</h4>
+                            <ul>
+                                <li>✓ 에너지 효율 20% 개선</li>
+                                <li>✓ 스크린 활용 최적화</li>
+                                <li>✓ 신재생에너지 검토</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-card low">
+                    <div class="risk-header">
+                        <div class="risk-level">
+                            <span class="level-icon">🟢</span>
+                            <span class="level-text">LOW</span>
+                        </div>
+                        <h3>재무 리스크</h3>
+                        <span class="risk-score">4점</span>
+                    </div>
+                    <div class="risk-body">
+                        <p class="risk-calc">가능성 2 × 영향도 2</p>
+                        <ul class="risk-details">
+                            <li>이익률 99.7% (매우 높음)</li>
+                            <li>안정적 수익 구조</li>
+                            <li>적자 가능성 매우 낮음</li>
+                        </ul>
+                        <div class="risk-actions">
+                            <h4>대응 전략:</h4>
+                            <ul>
+                                <li>✓ 월별 예산 대비 실적 분석</li>
+                                <li>✓ 비상 예비비 500만원 확보</li>
+                                <li>✓ 비용 추적 체계화</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Criteria Image -->
+            <div class="image-container">
+                <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/e2d0977a-3c1f-42dc-b2ad-dca904ff156f/4479d813-ad4d-45f9-ad2d-06a033c5d7e6?se=2025-10-28T11%3A25%3A05Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22risk_criteria.png%22&sig=PJSfC5rNbfkip81z/tYkGWQNBKZsF3kdBNTHq8NMw3c%3D" alt="리스크 평가 기준" class="dashboard-image">
+                <p class="image-caption">리스크 매트릭스 및 평가 기준 (ISO 31000)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optimization Strategy -->
+    <section id="optimization" class="section optimization-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-lightbulb"></i>
+                수익성 최적화 전략
+            </h2>
+
+            <!-- Environmental Optimization -->
+            <div class="optimization-container">
+                <h3 class="subsection-title">생육단계별 환경 최적 조건</h3>
+                
+                <div class="env-stages">
+                    <div class="env-stage-card">
+                        <div class="env-stage-header">
+                            <h4>초기생육기 (0-30일)</h4>
+                        </div>
+                        <div class="env-conditions">
+                            <div class="condition-item">
+                                <i class="fas fa-thermometer-half"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">온도</span>
+                                    <span class="condition-value">주간 25-28°C / 야간 18-20°C</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-tint"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">습도</span>
+                                    <span class="condition-value">70-80%</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-cloud"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">CO₂</span>
+                                    <span class="condition-value">600-800 ppm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-bolt"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">EC</span>
+                                    <span class="condition-value">1.8-2.2 mS/cm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-faucet"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">관수</span>
+                                    <span class="condition-value">3-4회/일</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="env-stage-card">
+                        <div class="env-stage-header">
+                            <h4>영양생장기 (31-60일)</h4>
+                        </div>
+                        <div class="env-conditions">
+                            <div class="condition-item">
+                                <i class="fas fa-thermometer-half"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">온도</span>
+                                    <span class="condition-value">주간 23-26°C / 야간 16-18°C</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-tint"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">습도</span>
+                                    <span class="condition-value">65-75%</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-cloud"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">CO₂</span>
+                                    <span class="condition-value">800-1000 ppm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-bolt"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">EC</span>
+                                    <span class="condition-value">2.2-2.8 mS/cm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-faucet"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">관수</span>
+                                    <span class="condition-value">4-6회/일</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="env-stage-card">
+                        <div class="env-stage-header">
+                            <h4>개화착과기 (61-90일)</h4>
+                        </div>
+                        <div class="env-conditions">
+                            <div class="condition-item">
+                                <i class="fas fa-thermometer-half"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">온도</span>
+                                    <span class="condition-value">주간 22-25°C / 야간 15-18°C</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-tint"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">습도</span>
+                                    <span class="condition-value">60-70%</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-cloud"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">CO₂</span>
+                                    <span class="condition-value">1000-1200 ppm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-bolt"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">EC</span>
+                                    <span class="condition-value">2.8-3.5 mS/cm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-faucet"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">관수</span>
+                                    <span class="condition-value">6-8회/일</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="env-stage-card active">
+                        <div class="env-stage-header">
+                            <h4>수확기 (91일+) ⭐ 현재</h4>
+                        </div>
+                        <div class="env-conditions">
+                            <div class="condition-item">
+                                <i class="fas fa-thermometer-half"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">온도</span>
+                                    <span class="condition-value">주간 20-24°C / 야간 16-18°C</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-tint"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">습도</span>
+                                    <span class="condition-value">55-65%</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-cloud"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">CO₂</span>
+                                    <span class="condition-value">800-1000 ppm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-bolt"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">EC</span>
+                                    <span class="condition-value">3.0-4.0 mS/cm</span>
+                                </div>
+                            </div>
+                            <div class="condition-item">
+                                <i class="fas fa-faucet"></i>
+                                <div class="condition-detail">
+                                    <span class="condition-label">관수</span>
+                                    <span class="condition-value">5-7회/일</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environmental Optimization Image -->
+                <div class="image-container">
+                    <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/e2d0977a-3c1f-42dc-b2ad-dca904ff156f/fcdb772d-6dbc-4b9d-9f92-b8ab6bbe8677?se=2025-10-28T11%3A25%3A41Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22environmental_optimization.png%22&sig=kP7ZGYdFYWXYiTpD137pIO%2BFSlCO/bQmB/6gwYoHMsk%3D" alt="환경 최적화 가이드" class="dashboard-image">
+                    <p class="image-caption">생육단계별 환경 최적화 가이드</p>
+                </div>
+            </div>
+
+            <!-- Cost & Revenue Optimization -->
+            <div class="profit-optimization">
+                <h3 class="subsection-title">비용 최적화 및 수익 향상 전략</h3>
+                
+                <div class="profit-grid">
+                    <div class="profit-card">
+                        <div class="profit-icon energy">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h4>에너지 절감</h4>
+                        <div class="profit-target">
+                            <span class="target-label">목표</span>
+                            <span class="target-value">20% 절감</span>
+                        </div>
+                        <div class="profit-detail">
+                            <p>145 kWh → 116 kWh</p>
+                        </div>
+                        <ul class="profit-actions">
+                            <li>스크린 활용 최적화</li>
+                            <li>단열 성능 개선</li>
+                            <li>난방 시간대 조절</li>
+                        </ul>
+                    </div>
+
+                    <div class="profit-card">
+                        <div class="profit-icon labor">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>노동비 절감</h4>
+                        <div class="profit-target">
+                            <span class="target-label">목표</span>
+                            <span class="target-value">32% 단축</span>
+                        </div>
+                        <div class="profit-detail">
+                            <p>29.57h → 20h/일</p>
+                        </div>
+                        <ul class="profit-actions">
+                            <li>작업 동선 최적화</li>
+                            <li>자동화 설비 도입</li>
+                            <li>작업 표준화</li>
+                        </ul>
+                    </div>
+
+                    <div class="profit-card">
+                        <div class="profit-icon quality">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>품질 향상</h4>
+                        <div class="profit-target">
+                            <span class="target-label">목표</span>
+                            <span class="target-value">당도 8.0+</span>
+                        </div>
+                        <div class="profit-detail">
+                            <p>Brix 8.0 이상 유지</p>
+                        </div>
+                        <ul class="profit-actions">
+                            <li>EC 농도 정밀 관리</li>
+                            <li>수분 스트레스 제어</li>
+                            <li>수확 적기 준수</li>
+                        </ul>
+                    </div>
+
+                    <div class="profit-card">
+                        <div class="profit-icon timing">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>수확시기 관리</h4>
+                        <div class="profit-target">
+                            <span class="target-label">목표</span>
+                            <span class="target-value">가격 최적화</span>
+                        </div>
+                        <div class="profit-detail">
+                            <p>고가격 시즌 집중</p>
+                        </div>
+                        <ul class="profit-actions">
+                            <li>1-3월 출하 집중</li>
+                            <li>11-12월 출하 증대</li>
+                            <li>성수기 물량 확보</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Profitability Strategy Image -->
+                <div class="image-container">
+                    <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/e2d0977a-3c1f-42dc-b2ad-dca904ff156f/eeb6e4aa-5ec1-457a-9071-e6c41d732128?se=2025-10-28T11%3A25%3A41Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22profitability_strategy.png%22&sig=XKQlGaN5KYy7mN00igj8LWSoz5cZGEzPlngfsWYxqp0%3D" alt="수익성 향상 전략" class="dashboard-image">
+                    <p class="image-caption">비용 최적화 및 수익 향상 전략</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Checklist -->
+    <section id="checklist" class="section checklist-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-clipboard-list"></i>
+                일상 관리 체크리스트
+            </h2>
+
+            <div class="checklist-container">
+                <!-- Daily Checklist -->
+                <div class="checklist-card">
+                    <div class="checklist-header daily">
+                        <i class="fas fa-sun"></i>
+                        <h3>매일 관리 (Daily)</h3>
+                    </div>
+                    <ul class="checklist-items">
+                        <li>
+                            <input type="checkbox" id="daily1">
+                            <label for="daily1">
+                                <i class="fas fa-temperature-high"></i>
+                                온도/습도 센서 확인 및 기록
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="daily2">
+                            <label for="daily2">
+                                <i class="fas fa-eye"></i>
+                                작물 외관 관찰 (잎, 줄기, 과실)
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="daily3">
+                            <label for="daily3">
+                                <i class="fas fa-vial"></i>
+                                EC/pH 측정 및 조정
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="daily4">
+                            <label for="daily4">
+                                <i class="fas fa-faucet"></i>
+                                관수 시스템 점검
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="daily5">
+                            <label for="daily5">
+                                <i class="fas fa-wind"></i>
+                                CO₂ 농도 확인
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="daily6">
+                            <label for="daily6">
+                                <i class="fas fa-book"></i>
+                                작업일지 작성
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Weekly Checklist -->
+                <div class="checklist-card">
+                    <div class="checklist-header weekly">
+                        <i class="fas fa-calendar-week"></i>
+                        <h3>주간 관리 (Weekly)</h3>
+                    </div>
+                    <ul class="checklist-items">
+                        <li>
+                            <input type="checkbox" id="weekly1">
+                            <label for="weekly1">
+                                <i class="fas fa-ruler-vertical"></i>
+                                생육조사 (초장, 엽수, 마디수)
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="weekly2">
+                            <label for="weekly2">
+                                <i class="fas fa-apple-alt"></i>
+                                착과율 및 과실 발육 체크
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="weekly3">
+                            <label for="weekly3">
+                                <i class="fas fa-bug"></i>
+                                병해충 정밀 진단
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="weekly4">
+                            <label for="weekly4">
+                                <i class="fas fa-flask"></i>
+                                양액 성분 분석
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="weekly5">
+                            <label for="weekly5">
+                                <i class="fas fa-clock"></i>
+                                작업시간 집계 및 분석
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="weekly6">
+                            <label for="weekly6">
+                                <i class="fas fa-leaf"></i>
+                                적엽/적과 작업
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Monthly Checklist -->
+                <div class="checklist-card">
+                    <div class="checklist-header monthly">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>월간 관리 (Monthly)</h3>
+                    </div>
+                    <ul class="checklist-items">
+                        <li>
+                            <input type="checkbox" id="monthly1">
+                            <label for="monthly1">
+                                <i class="fas fa-weight"></i>
+                                수확량 집계 및 품질 평가
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="monthly2">
+                            <label for="monthly2">
+                                <i class="fas fa-calculator"></i>
+                                비용 분석 (예산 대비 실적)
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="monthly3">
+                            <label for="monthly3">
+                                <i class="fas fa-bolt"></i>
+                                에너지 소비 분석
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="monthly4">
+                            <label for="monthly4">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                리스크 재평가
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="monthly5">
+                            <label for="monthly5">
+                                <i class="fas fa-tools"></i>
+                                시설 점검 및 유지보수
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="monthly6">
+                            <label for="monthly6">
+                                <i class="fas fa-chart-line"></i>
+                                생육 데이터 종합 분석
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Action Plan -->
+            <div class="action-plan">
+                <h3 class="subsection-title">핵심 실행 과제</h3>
+                
+                <div class="action-timeline">
+                    <div class="action-phase immediate">
+                        <div class="phase-header">
+                            <span class="phase-badge">즉시 실행</span>
+                            <h4>이번 달 (1개월)</h4>
+                        </div>
+                        <ul class="action-list">
+                            <li><i class="fas fa-check-circle"></i> 환경센서 실시간 모니터링 강화</li>
+                            <li><i class="fas fa-check-circle"></i> 일일 작업일지 빠짐없이 기록</li>
+                            <li><i class="fas fa-check-circle"></i> 병해충 예찰 루틴 확립</li>
+                            <li><i class="fas fa-check-circle"></i> 비용 세부 항목 추적 시작</li>
+                        </ul>
+                    </div>
+
+                    <div class="action-phase short-term">
+                        <div class="phase-header">
+                            <span class="phase-badge">단기 과제</span>
+                            <h4>3개월 내</h4>
+                        </div>
+                        <ul class="action-list">
+                            <li><i class="fas fa-clock"></i> 작업효율화로 20시간/일 달성</li>
+                            <li><i class="fas fa-bolt"></i> 에너지 20% 절감 목표</li>
+                            <li><i class="fas fa-star"></i> 품질향상 (당도 8.0 Brix 이상)</li>
+                            <li><i class="fas fa-handshake"></i> 안정적 판매처 3곳 확보</li>
+                        </ul>
+                    </div>
+
+                    <div class="action-phase mid-term">
+                        <div class="phase-header">
+                            <span class="phase-badge">중기 과제</span>
+                            <h4>6개월 내</h4>
+                        </div>
+                        <ul class="action-list">
+                            <li><i class="fas fa-robot"></i> 자동화 설비 추가 투자</li>
+                            <li><i class="fas fa-shield-alt"></i> 보험 가입 및 예비비 적립</li>
+                            <li><i class="fas fa-certificate"></i> GAP 인증 획득</li>
+                            <li><i class="fas fa-expand-arrows-alt"></i> 가공/체험사업 검토</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section conclusion-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-flag-checkered"></i>
+                종합 평가 및 결론
+            </h2>
+
+            <div class="conclusion-grid">
+                <!-- Strengths -->
+                <div class="conclusion-card strengths">
+                    <h3><i class="fas fa-thumbs-up"></i> 강점 (Strengths)</h3>
+                    <ul>
+                        <li>
+                            <span class="highlight">ROI 22.80%</span> - Excellent 등급
+                            <p class="description">농업 평균(10%)의 2.3배, 은행예금의 6.5배</p>
+                        </li>
+                        <li>
+                            <span class="highlight">최신 스마트팜 시설</span> - 3.2억원 투자
+                            <p class="description">환경제어, 양액, 난방 시스템 완비</p>
+                        </li>
+                        <li>
+                            <span class="highlight">안정적 수익구조</span> - 이익률 99.7%
+                            <p class="description">예상 연간 순이익 7,400만원</p>
+                        </li>
+                        <li>
+                            <span class="highlight">체계적 데이터 관리</span>
+                            <p class="description">환경, 생육, 작업 데이터 수집 및 분석</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Improvements -->
+                <div class="conclusion-card improvements">
+                    <h3><i class="fas fa-exclamation-circle"></i> 개선 필요 사항</h3>
+                    <ul>
+                        <li>
+                            <span class="highlight">작업 효율화</span>
+                            <p class="description">29.57시간/일 → 20시간/일 (32% 단축 목표)</p>
+                        </li>
+                        <li>
+                            <span class="highlight">환경 리스크 관리</span>
+                            <p class="description">온도 변동성 안정화 (0-27.5°C 범위)</p>
+                        </li>
+                        <li>
+                            <span class="highlight">데이터 수집 확대</span>
+                            <p class="description">18일 → 전체 작기 데이터 축적 필요</p>
+                        </li>
+                        <li>
+                            <span class="highlight">에너지 효율 개선</span>
+                            <p class="description">20% 절감 목표 (145 kWh → 116 kWh)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Recommendation -->
+            <div class="final-recommendation">
+                <div class="recommendation-header">
+                    <i class="fas fa-star"></i>
+                    <h3>최종 권고사항</h3>
+                </div>
+                <div class="recommendation-content">
+                    <div class="recommendation-badge">
+                        <i class="fas fa-check-double"></i>
+                        <span>투자 지속 및 사업 확대 강력 권장</span>
+                    </div>
+                    <div class="recommendation-reasons">
+                        <div class="reason-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>매우 우수한 수익성</h4>
+                                <p>ROI 22.80%, 투자회수 4.39년은 농업 분야에서 탁월한 성과</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>관리 가능한 리스크</h4>
+                                <p>환경 리스크는 HIGH이나 실시간 모니터링으로 대응 가능</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-arrow-up"></i>
+                            <div>
+                                <h4>지속적 개선 가능</h4>
+                                <p>데이터 축적과 최적화로 수익성 추가 향상 가능</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-expand"></i>
+                            <div>
+                                <h4>확장 잠재력</h4>
+                                <p>1-2년 후 추가 동 증설 검토 권장</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="report-footer">
+                <div class="footer-info">
+                    <p><strong>농가명:</strong> 김선비 농가</p>
+                    <p><strong>작물:</strong> 방울토마토 (보니또_미푸코)</p>
+                    <p><strong>재배면적:</strong> 495 m²</p>
+                    <p><strong>분석일:</strong> 2025년 10월 28일</p>
+                </div>
+                <div class="footer-note">
+                    <p><i class="fas fa-info-circle"></i> 본 분석은 2025년 8월 25일 ~ 10월 2일 (18일간) 수집된 데이터를 기반으로 작성되었습니다.</p>
+                    <p>추가 데이터가 축적되면 더욱 정밀한 분석이 가능합니다. 월별 정기 리포트 발행을 권장드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 스마트팜 데이터 분석 시스템. All rights reserved.</p>
+            <p>🌱 지속 가능한 농업을 위한 데이터 기반 의사결정</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9959c518a873d3ed","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
